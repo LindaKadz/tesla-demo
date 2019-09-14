@@ -1,21 +1,25 @@
 # TeslaDemo
 
-**TODO: Add description**
+**A project to demonstrate how Tesla works**
 
-## Installation
+## Use
+Clone from github
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `tesla_demo` to your list of dependencies in `mix.exs`:
+```
+  git clone https://github.com/LindaKadz/tesla-demo.git
 
-```elixir
-def deps do
-  [
-    {:tesla_demo, "~> 0.1.0"}
-  ]
-end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/tesla_demo](https://hexdocs.pm/tesla_demo).
+Install the dependencies by running
 
+```
+  mix deps.get
+
+```
+
+Test the functions on iex using
+
+```
+  $>iex -S mix
+
+```
