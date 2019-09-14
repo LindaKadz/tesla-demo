@@ -3,16 +3,10 @@ defmodule TeslaDemo do
   Documentation for TeslaDemo.
   """
 
-  @doc """
-  Hello world.
+  use Tesla
 
-  ## Examples
+  plug Tesla.Middleware.BaseUrl, "https://api.github.com"
+  plug Tesla.Middleware.Headers, %{"User-Agent" => "tesla"}
+  plug Tesla.Middleware.JSON
 
-      iex> TeslaDemo.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
 end
